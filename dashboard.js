@@ -24,4 +24,22 @@ function display() {
     expenses.textContent = `${totalExpense} ETB`
     Balance.textContent = `${currentBalance} ETB`
     saving.textContent = `${totalSaving} ETB`
+    displayRecentTransaction()
+}
+
+function displayRecentTransaction() {
+        const recentTransactions = transactions.slice(-4)
+    recentTransactions.forEach(element => {
+        const card = document.createElement("div")
+        const transactionAmount = document.createElement("p")
+        const transactionType = document.createElement("p")
+        const transactionDate = document.createElement("p")
+
+        transactionAmount.textContent = element.amount
+        transactionType.textContent = element.type
+        transactionDate.textContent = element.date
+        card.append(transactionAmount, transactionType, transactionDate)
+        card.classList.add("card")
+        recent.append(card)
+    });
 }

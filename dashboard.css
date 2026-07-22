@@ -17,7 +17,7 @@ main {
     padding: 2rem 0;
 }
 
-.grid-container section{
+.grid-container section {
     padding: 1.5rem;
     color: var(--datas-color);
 
@@ -28,6 +28,7 @@ main {
     margin-bottom: 0.75rem;
     color: inherit;
 }
+
 .current-balance {
     grid-area: balance;
     background: var(--balance-backgound-color);
@@ -66,6 +67,10 @@ main {
     border-radius: 15px;
 }
 
+.recent-transactions h3 {
+    border-bottom: 1px solid white;
+}
+
 .transaction-btn {
     max-width: 250px;
     border-radius: 10px;
@@ -89,15 +94,24 @@ main {
     animation: spinAndBack 0.8s ease-in-out 1;
 }
 
+.card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
 @keyframes spinAndBack {
     0% {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
     }
+
     50% {
-        transform: rotate(60deg); 
+        transform: rotate(60deg);
     }
+
     100% {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
     }
 }
 
