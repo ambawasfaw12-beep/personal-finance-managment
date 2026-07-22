@@ -38,7 +38,7 @@ ctx.stroke()
 
 
 // 4. Draw Y-axis numbers and grid lines
-const ticks = 6
+const ticks = 4
 
 ctx.textAlign = "right"
 ctx.textBaseline = "middle"
