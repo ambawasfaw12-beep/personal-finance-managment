@@ -1,0 +1,40 @@
+.inputBox{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap:10px;
+}
+
+.box{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input, #typeInput{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+   
+}
+
+.saveBtn{
+    max-width: 150px;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: hsl(99, 75%, 45%);
+    cursor: pointer;
+    color: white;
+    transition: background 0.5s ease;
+}
+
+.saveBtn:hover{
+      background: hsl(99, 75%, 50%);
+}

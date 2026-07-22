@@ -1,0 +1,123 @@
+main {
+    padding: 2rem 2.5rem;
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'balance income expense'
+        'chart  chart saving'
+        'recent recent recent';
+    gap: 15px;
+    padding: 2rem 0;
+}
+
+.grid-container section{
+    padding: 1.5rem;
+    color: var(--datas-color);
+
+}
+
+.grid-container section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: inherit;
+}
+.current-balance {
+    grid-area: balance;
+    background: var(--balance-backgound-color);
+    border-radius: 15px;
+}
+
+.total-income {
+    grid-area: income;
+    background: var(--income-background-color);
+    border-radius: 15px;
+}
+
+.total-expenses {
+    grid-area: expense;
+    background: var(--expense-backgound-color);
+    border-radius: 15px;
+}
+
+.savingBox {
+    grid-area: saving;
+    background: var(--saving-backgound-color);
+    border-radius: 15px;
+}
+
+.chartBox {
+    display: flex;
+    flex-direction: column;
+    grid-area: chart;
+    background: var(--chartBox-backgound-color);
+    border-radius: 15px;
+}
+
+.recent-transactions {
+    grid-area: recent;
+    background: var(--transactions-backgound-color);
+    border-radius: 15px;
+}
+
+.transaction-btn {
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    background: hsla(219, 85%, 40%, 0.8);
+    color: white;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.transaction-btn:hover {
+    background: hsla(219, 85%, 45%);
+}
+
+.plus-icon {
+    padding-right: 1rem;
+    display: inline-block;
+}
+
+.transaction-btn:hover .plus-icon {
+    animation: spinAndBack 0.8s ease-in-out 1;
+}
+
+@keyframes spinAndBack {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(60deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'balance'
+            'income'
+            'expense'
+            'chart'
+            'saving'
+            'recent';
+    }
+}

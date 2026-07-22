@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation" aria-label="Main Navigation">
+            <div class="navigationbox">
+
+                <div class="logo">
+                    <a href="dashboard.html">
+                        <img src="person.png" alt="Company Logo" class="logopicture">
+                        <span class="brand-name">Personal Finance</span>
+                    </a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="transaction.html">Transaction</a></li>
+                </ul>
+
+                <div class="responsivebox">
+                    <button id="responsiveBtn" aria-label="Toggle navigation" aria-expanded="false">
+                        <img src="list.png" alt="Menu icon" class="hamburger">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="hidden">
+        <ul class="navs-links">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="statistics.html">Statistics</a></li>
+            <li><a href="transaction.html">Transaction</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="title-box">
+            <h1>Dashboard</h1>
+            <a href="transaction.html" class="transaction-btn"><span class="plus-icon">+</span>Add Transaction</a>
+        </div>
+        <div class="grid-container">
+            <section class="current-balance">
+                <h3>Current Balance</h3>
+                <div class="" id="Balance">
+
+                </div>
+            </section>
+
+            <section class="total-income">
+                <h3>Total Income</h3>
+                <div class="" id="income">
+
+                </div>
+            </section>
+
+            <section class="total-expenses">
+                <h3>Total Expenses</h3>
+                <div class="" id="expenses">
+
+                </div>
+            </section>
+
+            <section class="savingBox">
+                <h3>Savings</h3>
+                <div class="" id="saving">
+
+                </div>
+            </section>
+
+            <section class="chartBox">
+                <h3>Analytics</h3>
+                <div>
+                    <canvas id="chart" width="500px" height="400px"></canvas>
+                </div>
+            </section>
+
+            <section class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <div class="" id="recent">
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="dashboard.js"></script>
+    <script src="charts.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
