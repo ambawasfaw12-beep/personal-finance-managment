@@ -1,4 +1,53 @@
-.accesbiltybox{
+.accesbiltybox {
     display: flex;
     justify-content: space-between;
+}
+
+.Searchbox {
+    display: flex;
+    justify-content: stretch;
+}
+
+.Searchbox input {
+    width: 400px;
+    max-width: 100%;
+    padding-left: 10px;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    font-size: 1.3rem;
+    height: 60px;
+}
+
+.Searchbox button {
+    padding: 0 10px;
+    background: black;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -1px;
+}
+
+.optionbox {
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    font-size: 1.3rem;
+}
+
+select {
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+@media(max-width: 768px){
+    .accesbiltybox{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
