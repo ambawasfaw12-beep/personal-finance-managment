@@ -28,7 +28,7 @@ function display() {
 }
 
 function displayRecentTransaction() {
-        const recentTransactions = transactions.slice(-4)
+    const recentTransactions = (transactions.slice(-4)).reverse()
     recentTransactions.forEach(element => {
         const card = document.createElement("div")
         const transactionAmount = document.createElement("p")

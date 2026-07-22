@@ -157,6 +157,11 @@ a {
     padding: 0;
 }
 
+main {
+    padding: 2rem 2.5rem;
+}
+
+
 @media(max-width:768px) {
     .nav-links {
         display: none;
